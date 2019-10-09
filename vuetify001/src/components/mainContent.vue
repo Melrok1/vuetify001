@@ -1,7 +1,7 @@
 <template>
     <main>
         <article>
-            <img src="../assets/img/M.png" alt="M" width="50px">
+            <img src="../assets/img/M.png" alt="M" width="50px" class="firstLetter">
             <p>
                 <span class="importName">{{ meno }}</span> Lorem ipsum, dolor sit amet consectetur 
                 adipisicing elit. Commodi nihil 
@@ -12,7 +12,7 @@
                 quibusdam harum tenetur, nihil atque aliquam vero voluptatum inventore perferendis 
                 illum doloribus quo voluptatibus earum impedit ipsum cumque.
             </p>
-            <img src="../assets/img/L.png" alt="M" width="50px">
+            <img src="../assets/img/L.png" alt="M" width="50px" class="firstLetter">
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                 <span class="importName">{{ meno }}</span> Commodi nihil 
@@ -43,7 +43,7 @@ main {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
   margin: 60px 50px;
 }
@@ -63,11 +63,22 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: #54b983;
+  text-decoration: none;
+  font-weight: 800;
 }
 
 .importName {
     font-weight: 800;
     font-style: italic;
+}
+
+.firstLetter {
+  float: left;
+  margin: 0 0.45rem 0 0;
+}
+
+article {
+  clear: both;
 }
 </style>
