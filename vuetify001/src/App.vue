@@ -1,11 +1,19 @@
 <template>
-  <div id="app">
-    <h1>Vloženie vuetify </h1>
-  </div>
+  <html>
+    <app-header></app-header>
+    <main-content></main-content>
+  </html>
 </template>
 
 <script>
+import Header from './components/header.vue';
+import MainContent from './components/mainContent.vue';
+
 export default {
+  components: {
+    'app-header': Header,
+    'main-content': MainContent
+  },
   data () {
     return {
     }
@@ -13,7 +21,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
