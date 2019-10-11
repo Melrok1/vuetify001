@@ -45,7 +45,7 @@ main {
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   color: #2c3e50;
-  margin: 60px 50px;
+  margin: 60px 30px;
 }
 
 h1, h2 {

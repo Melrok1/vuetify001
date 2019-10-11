@@ -1,9 +1,11 @@
 <template>
-  <html>
+  <div>
     <app-header></app-header>
-    <main-content></main-content>
-    <prog-menu v-bind:progMenu="progMenu"></prog-menu>
-  </html>
+    <div id="containerMainContent">
+      <prog-menu v-bind:progMenu="progMenu" id="menu1"></prog-menu>
+      <main-content id="main1"></main-content>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -58,4 +60,19 @@ li {
 a {
   color: #42b983;
 }
+
+#containerMainContent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#menu1 {
+  grid-column: 1/3;
+}
+
+#main1 {
+  grid-column: 3/12;
+}
+
+
 </style>
